@@ -1,4 +1,5 @@
 import "./App.css";
+import CourseForm from "./components/courseform";
 import CourseGoalList from "./components/coursegoallist";
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
   return (
     <>
       <div>
-        <section id="goal-form"></section>
+        <section id="goal-form">
+          <CourseForm />
+        </section>
         <section id="goals">
           <CourseGoalList items={courseGoals} />
         </section>
